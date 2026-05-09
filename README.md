@@ -1,1 +1,0 @@
-# goruntu_isleme
