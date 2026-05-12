@@ -1,0 +1,39 @@
+_____________________________________________________________________________________________
+
+ÖNEMLİ BİLGİLER
+
+-Görüntü işleme için kullanacağımız bilgisayar ve kamera: RP5 ve RP Module Camera 3
+
+-Kamera en yüksek irtifada yer ile 45 derece açı ile konumlanacak.
+
+
+_____________________________________________________________________________________________
+
+UYGULAMA AKIŞI
+
+
+1-Kalkıştan TARAMA ALANINA girene kadar sadece ham görüntü monitöre aktarılacak herhangi bir görüntü işleme algoritması çalışmayacak.
+
+2-Tarama Alanına giriş yaptıktan sonra görüntü işleme algoritmaları başlatılmalı ve hedefler rastgele dağılacağından bize en yakın olan hedefi algılamalı. Sonrasında algıladığımız hedefe kitlenip doğru zamanlamada (bunun matematiksel olarak hesaplamalarını yapmamız lazım irtifa vs gibi etmenlere göre) hedefe doğru alçalıp birinci yükü bırakmalı.
+
+3-Bunları yapmak adına mesafeyi ölçen bir algoritma kurmamız gerek ki nerede ne zaman alçalacağını ve yükü ne zaman bırakacağını bilebilsin.
+ 
+4- İlk yükü bıraktıktan sonra görüntü işleme algoritması tekrar bir önceki irtifaya çıkana dek deactive olmalı. Tekrar aynı irtifaya çıktığında tekrar başlamalı ve bir önceki tespit ettiğimiz hedefe soyut olarak (örn. olarak kırmızı kare algıladık bir dahakine kırmızı kare aramicak sadece mavi kare) bir tik atmış olmamız gerekiyor.
+
+5- İkinci hedef için de ilk hedefte yaptığımız şeyleri yaptıktan sonra kalan hedefe kitlenip belirli bir mesafe kaldığında hedefe doğru alçalıp ikinci yükü de bırakmalı. Bıraktığımızda görüntü işleme algoritması tekrar deactive olmalı ve eski irtifasına yükselmeli.
+
+_____________________________________________________________________________________________
+
+KODDA EKLENEBİLECEK VE YENİLENEBİLECEK ŞEYLER
+
+- While dögüsü kullanmamalıyız.
+
+-
+
+
+
+
+
+
+
+
