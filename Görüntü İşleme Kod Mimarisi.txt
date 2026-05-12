@@ -30,7 +30,31 @@ KODDA EKLENEBİLECEK VE YENİLENEBİLECEK ŞEYLER
 
 - Kod deniz, gökyüzü vb. fake targetları algılamamalı.
 
-- 
+- While döngüsü yerine durum tabanlı (state machine) görev sistemi kullanılmalı.
+Sistem fake targetları (deniz, gökyüzü, parlama vb.) algılamamalı.
+HSV tabanlı renk filtreleme geliştirilmeli.
+Şekil doğrulama algoritmaları eklenmeli.
+Kontur düzgünlüğü kontrolü yapılmalı.
+Alan filtresi ile küçük/büyük yanlış hedefler elenmeli.
+En-boy oranı kontrolü yapılmalı.
+Hedef birkaç frame boyunca doğrulanmadan kilitlenme yapılmamalı.
+Gürültü azaltma algoritmaları eklenmeli.
+FPS düşüşüne karşı optimize edilmiş görüntü işleme kullanılmalı.
+Kamera görüntüsünde motion blur etkisi azaltılmalı.
+Hedef kaybı durumunda yeniden arama algoritması bulunmalı.
+Yanlış hedef algılanırsa kilit otomatik iptal edilmeli.
+Kamera bağlantısı koparsa güvenli moda geçilmeli.
+İrtifa kritik seviyeye düşerse yük bırakma engellenmeli.
+Yer kontrol istasyonunda:
+kamera görüntüsü,
+hedef kutusu,
+hedef tipi,
+kilit durumu,
+mesafe bilgisi,
+bırakılacak yük bilgisi
+gösterilmeli.
+Tamamlanan hedeflerin tekrar algılanmaması için hedef hafızası kullanılmalı.
+Görüntü işleme sadece gerekli görev aşamalarında çalıştırılarak işlemci yükü azaltılmalı.
 
 
 
