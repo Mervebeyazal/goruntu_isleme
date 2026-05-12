@@ -28,7 +28,9 @@ KODDA EKLENEBİLECEK VE YENİLENEBİLECEK ŞEYLER
 
 - While dögüsü kullanmamalıyız.
 
--
+- Kod deniz, gökyüzü vb. fake targetları algılamamalı.
+
+- 
 
 
 
